@@ -60,27 +60,27 @@ Because the depot and return are fixed, the above conditions also ensure every i
 Let
 
 $$
-\operatorname{Travel}(P)=\sum_{r=0}^{k}t_{v_r,v_{r+1}},
+\mathrm{Travel}(P)=\sum_{r=0}^{k}t_{v_r,v_{r+1}},
 \qquad
-\operatorname{Wait}(P)=\sum_{r=1}^{k}w_r,
+\mathrm{Wait}(P)=\sum_{r=1}^{k}w_r,
 $$
 
 $$
-\operatorname{Overtime}(P)=\max(0,R(P)-T_e).
+\mathrm{Overtime}(P)=\max(0,R(P)-T_e).
 $$
 
 Define weighted cost
 
 $$
-C(P)=\operatorname{Travel}(P)
-+\lambda\operatorname{Wait}(P)
-+2\operatorname{Overtime}(P).
+C(P)=\mathrm{Travel}(P)
++\lambda\mathrm{Wait}(P)
++2\mathrm{Overtime}(P).
 $$
 
 The optimization goal is
 
 $$
-\operatorname*{lexmax}_{P\text{ feasible}}\bigl(k(P),-C(P)\bigr).
+\max_{P\text{ feasible}}\bigl(k(P),-C(P)\bigr)\quad\text{(lexicographic order)}.
 $$
 
 Equivalently, maximize the number of attractions, then minimize cost among all feasible routes visiting that maximum number.
