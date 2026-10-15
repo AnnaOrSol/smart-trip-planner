@@ -1,0 +1,10 @@
+# Direct runtime dependencies (install transitive dependencies automatically).
+streamlit>=1.60,<2
+requests>=2.30,<3
+folium>=0.20,<1
+polyline>=2,<3
+geopy>=2.4,<3
+ortools>=9.15,<10
+
+# Test dependency
+pytest>=9,<10
